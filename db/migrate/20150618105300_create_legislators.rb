@@ -5,7 +5,7 @@ require_relative '../config'
 class CreateLegislators < ActiveRecord::Migration
   def change
     # HINT: checkout ActiveRecord::Migration.create_table
-    create_table :n do |t|
+    create_table :legislators do |t|
       t.string :title
       t.string :firstname
       t.string :middlename
@@ -23,7 +23,7 @@ class CreateLegislators < ActiveRecord::Migration
       t.string :webform
       t.string :congress_office
       t.string :bioguide_id
-      t.string :otesmart_id
+      t.string :votesmart_id
       t.string :fec_id
       t.string :govtrack_id
       t.string :crp_id
